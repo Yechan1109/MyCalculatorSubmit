@@ -6,7 +6,7 @@ class Calculator {
     var firstNum : Double
     var secondNum: Double
     //
-    init(firstNum: Double, secondNum: Double) {
+    init(_ firstNum: Double,_ secondNum: Double) {
         self.firstNum = firstNum
         self.secondNum = secondNum
     }
@@ -48,12 +48,10 @@ class DivideOperation : Calculator {
 var firstInput: Double = 5
 var secondInput: Double = 10
 
-//let calculator = Calculator(firstNum: firstInput, secondNum: secondInput)
-let add = AddOperation(firstNum: firstInput, secondNum: secondInput)
-let subtract = SubtractOperation(firstNum: firstInput, secondNum: secondInput)
-let multiply = MultiplyOperation(firstNum: firstInput, secondNum: secondInput)
-let divide = DivideOperation(firstNum: firstInput, secondNum: secondInput)
-
+let add = AddOperation(firstInput, secondInput)
+let subtract = SubtractOperation(firstInput, secondInput)
+let multiply = MultiplyOperation(firstInput, secondInput)
+let divide = DivideOperation(firstInput, secondInput)
 
 print("A + B = ", add.calculate())
 print("A - B = ", subtract.calculate())

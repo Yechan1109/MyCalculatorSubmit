@@ -6,13 +6,10 @@ class Calculator {
     var firstNum : Double
     var secondNum: Double
 //  지정 생성자 init
-    init(firstNum: Double, secondNum: Double) {
+    init(_ firstNum: Double,_ secondNum: Double) {
         self.firstNum = firstNum
         self.secondNum = secondNum
     }
-//    init(_ secondNum: Double) {
-//
-//    }
 
     // operator 함수 정의 +, -, *, /
     func plus() -> Double {
@@ -35,7 +32,7 @@ class Calculator {
 var firstNum: Double = 5
 var secondNum: Double = 2
 
-let calculator = Calculator(firstNum: firstNum, secondNum: secondNum)
+let calculator = Calculator(firstNum,secondNum)
 
 print("A + B = ", calculator.plus())
 print("A - B = ", calculator.subtract())
