@@ -6,7 +6,7 @@ class Calculator {
     var secondNum: Double
     
     // 초기화
-    init(firstNum: Double, secondNum: Double) {
+    init(_ firstNum: Double,_ secondNum: Double) {
         self.firstNum = firstNum
         self.secondNum = secondNum
     }
@@ -27,13 +27,13 @@ class Calculator {
 }
 //var num_A = Double(readLine()!)!
 //var num_B = Double(readLine()!)!
-var num_A: Double = 15
-var num_B: Double = 20
+var firstNum: Double = 15
+var secondNum: Double = 20
 
-let calculator = Calculator(firstNum: num_A, secondNum: num_B)
-print("A + B = ", calculator.plus())
-print("A - B = ", calculator.subtract())
-print("A * B = ", calculator.multiply())
-print("A / B = ", calculator.divide())
+let calculator = Calculator(firstNum, secondNum)
+print("\(firstNum) + \(secondNum) = ", calculator.plus())
+print("\(firstNum) + \(secondNum) = ", calculator.subtract())
+print("\(firstNum) + \(secondNum) = ", calculator.multiply())
+print("\(firstNum) + \(secondNum) = ", calculator.divide())
 
 

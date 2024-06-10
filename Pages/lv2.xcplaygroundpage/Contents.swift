@@ -34,8 +34,8 @@ var secondNum: Double = 2
 
 let calculator = Calculator(firstNum,secondNum)
 
-print("A + B = ", calculator.plus())
-print("A - B = ", calculator.subtract())
-print("A * B = ", calculator.multiply())
-print("A / B = ", calculator.divide())
-print("A % B = ", calculator.remain())
+print("\(firstNum) + \(secondNum) = ", calculator.plus())
+print("\(firstNum) - \(secondNum) = ", calculator.subtract())
+print("\(firstNum) * \(secondNum) = ", calculator.multiply())
+print("\(firstNum) / \(secondNum) = ", calculator.divide())
+print("\(firstNum) % \(secondNum) = ", calculator.remain())
